@@ -4,14 +4,12 @@ import json
 from gpiozero import LED
 from time import sleep
 
-colores = '{"verde":True, "azul":True, "rojo":True}'
-accion = '{"prendido":True, "apagado":True}'
+colores = {"verde":True, "azul":True, "rojo":True}
+accion = {"prendido":True, "apagado":True}
 
-jsoncolor= json.load(colores)
-jsonaccion = json.load(accion)
 
-seleccion: str
-selec: str
+seleccion = "hola"
+selec = "xd"
 
 # Puerto de los LED
 ledVerde = LED(17)
@@ -33,7 +31,7 @@ while True:
         input(selec)
     
         if seleccion == "verde":
-            if True == jsonaccion[selec]:
+            if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
                         ledVerde.on()
@@ -43,7 +41,7 @@ while True:
                 else:
                     ledVerde.on()
         if seleccion == "azul":
-            if True == jsonaccion[selec]:
+            if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
                         ledAzul.on()
@@ -53,7 +51,7 @@ while True:
                 else:
                     ledAzul.on()
         if seleccion == "rojo":
-            if True == jsonaccion[selec]:
+            if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
                         ledRojo.on()
