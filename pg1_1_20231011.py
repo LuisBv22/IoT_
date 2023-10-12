@@ -30,7 +30,7 @@ while True:
         print('2. Prendido')
         selec = input()
     
-        if selec == "verde":
+        if seleccion == "verde":
             if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
@@ -40,7 +40,7 @@ while True:
                         sleep(1)
                 else:
                     ledVerde.on()
-        if selec == "azul":
+        if seleccion == "azul":
             if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
@@ -50,7 +50,7 @@ while True:
                         sleep(1)
                 else:
                     ledAzul.on()
-        if selec == "rojo":
+        if seleccion == "rojo":
             if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
