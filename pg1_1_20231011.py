@@ -22,13 +22,13 @@ while True:
     print('2. Azul')
     print('3. Verde')
     
-    input(seleccion)
+    seleccion = input()
     
     if True == colores[seleccion]:
         print('¿Que quieres hacer?')
         print('1. Prender')
         print('2. Apagar')
-        input(selec)
+        selec = input()
     
         if seleccion == "verde":
             if True == accion[selec]:
