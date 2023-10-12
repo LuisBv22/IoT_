@@ -1,5 +1,8 @@
-# Actividad 2
-# Ingresar desde la terminar que color se quiere prender utilizando biblioteca
+# Actividad 1.1:
+# 1. Crear un progroma que tome como entrada un color y prenda el LED correspondiente
+# El programa tambien debe de dejar el usuario elegir si quiere que parpadee o no el LED correspondiente
+
+# 2. Subir su nuevo programa a git con el titulo pg1_1_20231011.py
 import json
 from gpiozero import LED
 from time import sleep
