@@ -1,2 +1,2 @@
 # IoT_
-Repositorio creado para la clase de IoT
+Repositorio con los archivos de la clase Samsung IoT
