@@ -4,8 +4,8 @@ import json
 from gpiozero import LED
 from time import sleep
 
-colores = {"verde":True, "azul":True, "rojo":True}
-accion = {"prendido":True, "apagado":True}
+colores = {"Verde":True, "Azul":True, "Rojo":True}
+accion = {"Parpadear":True, "Prendido":True}
 
 
 seleccion = "hola"
@@ -26,11 +26,11 @@ while True:
     
     if True == colores[seleccion]:
         print('¿Que quieres hacer?')
-        print('1. Prender')
-        print('2. Apagar')
+        print('1. Parpadear')
+        print('2. Prendido')
         selec = input()
     
-        if seleccion == "verde":
+        if selec == "verde":
             if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
@@ -40,7 +40,7 @@ while True:
                         sleep(1)
                 else:
                     ledVerde.on()
-        if seleccion == "azul":
+        if selec == "azul":
             if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
@@ -50,7 +50,7 @@ while True:
                         sleep(1)
                 else:
                     ledAzul.on()
-        if seleccion == "rojo":
+        if selec == "rojo":
             if True == accion[selec]:
                 if selec == "Parpadear":
                     while True:
