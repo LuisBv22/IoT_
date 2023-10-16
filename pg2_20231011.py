@@ -9,15 +9,15 @@ Esto a manera que simile el comportamiento de nuestro cpu
 """
 
 import psutil
-import gpiozero
+from gpiozero import LED
 import time
 import requests
 
 Porcentaje_cpu=0
 
-ledverde=LED(17)
-ledamarillo=LED(27)
-ledrojo=LED(22)
+ledverde = LED(17)
+ledamarillo = LED(27)
+ledrojo = LED(22)
 
 while(True):
    
