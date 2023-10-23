@@ -23,20 +23,12 @@ while(True):
    
    #En caso de emular el CPU con una peticion recuerda de tener el archico Cpu.php en una pagina localhost o redireccionado en iun sistema que te regrese un valor 
 
-<<<<<<< HEAD
-   numero = requests.get('http://10.87.29.33/Cpu.php')
-   Porcentaje = int(numero.text)
-   print(Porcentaje)
-   #en caso de que requiere el CPU que ejecuat el programa
-   #Porcentaje = psutil.cpu_count()
-=======
    numero = requests.get('http://localhost:8888/Cpu.php')
    Porcentaje = int(numero.text)
 
    #en caso de que requiere el CPU que ejecuat el programa
    #Porcentaje = psutil.cpu_count()
    print(Porcentaje)
->>>>>>> 535f4aa608ce5289d179683eea105067e9756679
 
    #Condicionamos para encender el Led
 
@@ -54,12 +46,7 @@ while(True):
       #se apagarn los demas leds
       ledverde.off()
       ledrojo.off()
-<<<<<<< HEAD
       sleep(5) 
-=======
-      sleep(5)
-  
->>>>>>> 535f4aa608ce5289d179683eea105067e9756679
    if Porcentaje > 20:
       
       #se apagarn los demas leds
@@ -72,10 +59,6 @@ while(True):
          sleep(1)
          ledrojo.off()
          sleep(1)
-<<<<<<< HEAD
-=======
-         
->>>>>>> 535f4aa608ce5289d179683eea105067e9756679
          if(psutil.cpu_count()<20):
             break
       

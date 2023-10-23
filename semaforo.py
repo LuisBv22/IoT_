@@ -9,6 +9,6 @@ boton = Button(10)
 
 while True:
     
-    ledVerde.on()
+    
            
         
