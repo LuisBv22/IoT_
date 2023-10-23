@@ -14,9 +14,9 @@ import time
 
 Porcentaje_cpu=0
 
-ledverde=LED(17)
-ledamarillo=LED(27)
-ledrojo=LED(22)
+ledverde = LED(17)
+ledamarillo = LED(27)
+ledrojo = LED(22)
 
 while(True):
    Porcentaje = psutil.cpu_count()
